@@ -11,3 +11,5 @@ rootProject.name = 'exercises'
 
 include ':class2exercise2'
 include ':class2exercise3'
+include ':class4exercise1'
+include ':class4exercise2'
