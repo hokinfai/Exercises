@@ -18,7 +18,7 @@ public class NumberMultiplyApplication {
 
             /* Test if the user knows what is a times b. */
             while (true) {
-                System.out.println("What is " + a + " times " + b + "?");
+                System.out.println("What is " + a + " times " + b + "?, you can type give up if you don't know.");
                 reply = in.nextLine();
                 if (reply.equalsIgnoreCase("Give up")) {
                     System.out.println("The answer is " + a * b);
