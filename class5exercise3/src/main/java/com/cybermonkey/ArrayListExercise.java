@@ -1,7 +1,5 @@
 package com.cybermonkey;
 
-import jdk.internal.jline.console.ConsoleReader;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
