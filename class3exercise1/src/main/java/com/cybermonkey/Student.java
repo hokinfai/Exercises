@@ -1,7 +1,5 @@
 package com.cybermonkey;
 
-import java.util.Scanner;
-
 public class Student {
     public String name;
     public String idNumber;

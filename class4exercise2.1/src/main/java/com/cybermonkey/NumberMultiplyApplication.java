@@ -20,15 +20,16 @@ public class NumberMultiplyApplication {
             System.out.println("What is " + a + " times " + b + "?");
             int answer = in.nextInt();
 
-            if (answer == a * b) {
-                System.out.println("Well done!");
-            } else {
-            	 System.out.println("No.  Try again.");
+            while (answer != a * b) {
+                System.out.println("Try Again!");
+                answer = in.nextInt();
             }
 
+            System.out.println("Well Done!");
             /* See if the user wants to go on. */
             System.out.println("Do you want another sum (yes/no)?");
             reply = in.next();
+
         }
         while (reply.equals("yes"));
 
