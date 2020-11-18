@@ -17,19 +17,25 @@ public class NumberMultiplyApplication {
             int b = rand.nextInt(12) + 1;
 
             /* Test if the user knows what is a times b. */
-            System.out.println("What is " + a + " times " + b + "?");
-            int answer = in.nextInt();
+            while (true) {
+                System.out.println("What is " + a + " times " + b + "?, you can type give up if you don't know.");
+                reply = in.nextLine();
+                if (reply.equalsIgnoreCase("Give up")) {
+                    System.out.println("The answer is " + a * b);
+                    break;
+                }
+                int value = Integer.parseInt(reply);
 
-            while (answer != a * b) {
-                System.out.println("Try Again!");
-                answer = in.nextInt();
+                if (value == a * b) {
+                    System.out.println("Well done!");
+                    break;
+                }
+                System.out.println("No.  Try again.");
             }
 
-            System.out.println("Well Done!");
             /* See if the user wants to go on. */
             System.out.println("Do you want another sum (yes/no)?");
             reply = in.next();
-
         }
         while (reply.equals("yes"));
 
