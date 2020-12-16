@@ -18,6 +18,12 @@ public class PlayerSorter {
         System.out.println("Before Sorting : " + footballTeam);
         Collections.sort(footballTeam);
         System.out.println("After Sorting : " + footballTeam);
+
+        Collections.sort(footballTeam, new PlayerAgeComparator());
+        System.out.println("After Sorting with aging comparator : " + footballTeam);
+
+        Collections.sort(footballTeam, new PlayerNameComparator());
+        System.out.println("After Sorting with name comparator : " + footballTeam);
     }
 }
 
