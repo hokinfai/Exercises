@@ -1,8 +1,5 @@
 package com.cybermonkey;
 
-import jdk.internal.jline.console.ConsoleReader;
-
-import java.util.Random;
 import java.util.Scanner;
 
 public class RainFallApplication {
@@ -15,7 +12,7 @@ public class RainFallApplication {
         /* Read rainfall figures. */
         int[] rainData = new int[12];
         System.out.println("Enter rainfall data.");
-        for (int i = 0; i < rainData.length; i++) {
+        for (int i = 0; i < month.length; i++) {
             System.out.print(month[i] + ": ");
             rainData[i] = input.nextInt();
         }
