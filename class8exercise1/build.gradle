@@ -26,12 +26,11 @@ dependencies {
 
     // Use JUnit test framework
     testImplementation 'junit:junit:4.13'
-    testImplementation 'org.assertj:assertj-core:3.18.0'
 }
 
 application {
     // Define the main class for the application.
-    mainClassName = 'com.cybermonkey.ArrayListExercise'
+    mainClassName = 'com.cybermonkey.PlayerSorter'
 }
 
 
